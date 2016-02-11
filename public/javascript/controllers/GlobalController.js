@@ -11,13 +11,14 @@
 
 
     vm.logout = function() {
+      vm.user = {};
       $state.go('Home');
       UserFactory.logout();
     };
 
     vm.register = function() {
-        $state.go('Profile');
       UserFactory.register(vm.user).then(function() {
+        $state.go('Profile');
       }, function(err){
         vm.registerError = "Username already exists in our database";
       });

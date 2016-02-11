@@ -2,10 +2,6 @@ md-toolbar section img{
   cursor: pointer;
 }
 
-#sidenavToolbar {
-  padding : 10px;
-  background-color: #38B0DE;
-}
 
 #topToolbar {
   background-color: #CDFFFF;
@@ -24,8 +20,18 @@ height: auto;
 }
 
 .logRegForm {
+  opacity: 0.8;
   padding: 50px;
   margin: 100px 400px 200px 400px;
   background-color: #CDFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#splashPic {
+background-image: url('https://images.unsplash.com/photo-1446051642017-6d07a440087f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6ff2485a460057d65426d6f3fe2bd8c2');
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+width:100%;
+height: auto;
 }

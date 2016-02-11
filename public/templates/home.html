@@ -1,4 +1,6 @@
-<div ng-controller="GlobalController as vm">
+<div ng-controller="GlobalController as vm" >
+
+<div id="splashPic">
   <div ng-show="!nav.isLogin">
     <form ng-submit="nav.login();" class="logRegForm">
       <md-input-container>
@@ -50,5 +52,6 @@
       <md-button type="button" ng-click="nav.isLogin = false;">Login</md-button>
     </form>
   </div>
+</div>
 
 </div>
