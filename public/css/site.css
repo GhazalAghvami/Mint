@@ -1,0 +1,31 @@
+md-toolbar section img{
+  cursor: pointer;
+}
+
+#sidenavToolbar {
+  padding : 10px;
+  background-color: #38B0DE;
+}
+
+#topToolbar {
+  background-color: #CDFFFF;
+}
+
+#logo {
+  padding-left:50px;
+height: auto;
+  width: auto;
+}
+
+.errorMsg {
+  font-size: 12px;
+  padding: 20px;
+  color: red;
+}
+
+.logRegForm {
+  padding: 50px;
+  margin: 100px 400px 200px 400px;
+  background-color: #CDFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

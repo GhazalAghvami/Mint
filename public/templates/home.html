@@ -1,0 +1,54 @@
+<div ng-controller="GlobalController as vm">
+  <div ng-show="!nav.isLogin">
+    <form ng-submit="nav.login();" class="logRegForm">
+      <md-input-container>
+        <label>Username</label>
+        <input type="text" ng-model="nav.user.username" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Password</label>
+        <input type="password" ng-model="nav.user.password" required>
+      </md-input-container>
+      <div ng-show="nav.loginError" class="errorMsg">{{nav.loginError}}</div>
+      <md-button type="submit">
+        Login
+      </md-button>
+      <md-button ng-click="nav.isLogin = true;">
+        Register
+      </md-button>
+    </form>
+  </div>
+
+  <div ng-show="nav.isLogin">
+    <form ng-submit="nav.register();" class="logRegForm">
+      <md-input-container>
+        <label>Name</label>
+        <input ng-model="nav.user.name" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Last Name</label>
+        <input ng-model="nav.user.lastName" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Username</label>
+        <input ng-model="nav.user.username" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Email</label>
+        <input type="email" ng-model="nav.user.email" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Password</label>
+        <input type="password" ng-model="nav.user.password" required>
+      </md-input-container>
+      <md-input-container>
+        <label> Retype Password</label>
+        <input type="password" ng-model="nav.user.see_password" required>
+      </md-input-container>
+      <div ng-show="nav.registerError" class="errorMsg">{{nav.registerError}}</div>
+      <md-button type="submit" ng-disabled="nav.user.password != nav.user.see_password"> Register</md-button>
+      <md-button type="button" ng-click="nav.isLogin = false;">Login</md-button>
+    </form>
+  </div>
+
+</div>
